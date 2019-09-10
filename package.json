@@ -1,0 +1,23 @@
+{
+  "name": "adress_book",
+  "version": "1.0.0",
+  "description": "'Adress book application'",
+  "main": "index.js",
+  "repository": "https://github.com/clalil/address_book.git",
+  "author": "clalil <cliljander@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cucumber": "^5.1.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "puppeteer": "^1.19.0",
+    "superstatic": "^6.0.4"
+  },
+  "scripts": {
+    "cucumber":
+      "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
+  }
+
+}
