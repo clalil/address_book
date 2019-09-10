@@ -15,4 +15,8 @@
     "puppeteer": "^1.19.0",
     "superstatic": "^6.0.4"
   }
+  "scripts": {
+    "cucumber":
+      "superstatic -p 3000 2> /dev/null & cucumber-js; lsof -ti tcp:3000 | xargs kill"
+  }
 }
