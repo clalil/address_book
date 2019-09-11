@@ -59,10 +59,11 @@ document.addEventListener('DOMContentLoaded', () => {
       }
   
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
+      
       let contacts = JSON.parse(storage.getItem('contacts')) || []
       contacts.push(contact)
       storage.setItem('contacts', JSON.stringify(contacts))
       renderContacts()
-      addContactForm.reset()
+      addContactForm.reset() //this resets the form after the first contact has been added - without this, it only adds one contact cause it adds the info of both contacts at the same time.
   })
 })
