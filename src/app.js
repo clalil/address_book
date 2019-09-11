@@ -1,5 +1,6 @@
+const storage = window.localStorage
+
 const renderContacts = () => {
-  const storage = window.localStorage
   const contacts = JSON.parse(storage.getItem('contacts'))
   let div = document.querySelector('.contact-list')
   if (contacts) {
@@ -37,7 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
   
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
-      const storage = window.localStorage
   
       const {
         name,
@@ -62,5 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
       storage.setItem('contacts', JSON.stringify(contact))
       renderContacts()
+      addContactForm.reset()
   })
 })
