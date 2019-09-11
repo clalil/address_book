@@ -23,6 +23,13 @@ class AddressBookWorld {
     expect(actualContent).to.be.eq(expectedContent)
   }
 
+  async pageDoesNotHaveTextContent(unexpectedContent) {
+    const pageContent = await this.page.content()
+    let actualContent = pageContent.match(unexpectedContent)
+
+    expect(actualContent).to.be.eq(null)
+  }
+
   async clickOnButton(btnName) {
     const btnSelector = this.btnSelectorFromName(btnName.toLowerCase())
     await this.page.waitForSelector(btnSelector)
