@@ -2,7 +2,7 @@ const storage = window.localStorage
 
 const renderContacts = () => {
   const contacts = JSON.parse(storage.getItem('contacts'))
-  let div = document.querySelector('.contact-list')
+  let div = document.querySelector('#contact-list')
   if (contacts) {
     div.innerHTML = ''
     const ul = document.createElement('ul')
@@ -34,7 +34,7 @@ const renderContacts = () => {
 document.addEventListener('DOMContentLoaded', () => {
   renderContacts()  
 
-  const addContactForm = document.querySelector('.new-contact-form')
+  const addContactForm = document.querySelector('#new-contact-form')
   
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
