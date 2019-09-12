@@ -5,15 +5,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="Stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="src/style.css">
   <title>Address book</title>
 </head>
 
 <body class="ui center aligned container">
   <div>
   <h1>Contacts</h1>
-  <button id="add-contact" class="ui primary basic button">Add Contact</button>
-  <form id="new-contact-form" action="#">
+  <button id="add-contact" class="ui primary basic button"><i class="icon user"></i>Add Contact</button>
+  <form id="new-contact-form" class="ui form" action="#">
     <label for="name">Name</label>
     <input id="contact-name" name="name" type="text">
     <label for="email">Email</label>

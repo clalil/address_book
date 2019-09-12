@@ -1,0 +1,8 @@
+body {
+    margin: 1rem;
+}
+
+#add-contact,
+#save-contact {
+    margin: 0.5rem;
+}

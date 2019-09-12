@@ -5,17 +5,17 @@ const renderContacts = () => {
   let div = document.querySelector('#contact-list')
   if (contacts) {
     div.innerHTML = ''
-    const ul = document.createElement('ul')
+    const ul = document.createElement('div')
 
    contacts.forEach(contact => {
-      let li = document.createElement('li')
+      let li = document.createElement('div')
       li.innerHTML = 
       `
 <div class="ui grid">
   <div class="four wide column">
-          <div class="ui card">
+        <div class="ui card">
           <div class="image">
-            <img src="https://ca-address-book.herokuapp.com/images/pine.jpg">
+            <img src="https://semantic-ui.com/images/avatar/large/daniel.jpg">
           </div>
           <div class="content">
             <a class="header">${ contact.name }</a>
@@ -35,36 +35,11 @@ const renderContacts = () => {
                 22 Friends
               </a>
             </div>
-          </div>
-  </div>
-  <div class="four wide column">
-                    <div class="ui card">
-                    <div class="image">
-                      <img src="https://ca-address-book.herokuapp.com/images/pine.jpg">
-                    </div>
-                    <div class="content">
-                      <a class="header">${ contact.name }</a>
-                      <div class="meta">
-                        <span class="date">Joined in 2013</span>
-                      </div>
-                      <div class="description">
-                      <h2>${ contact.company }</h2>
-                          <p>${ contact.notes }</p>
-                          <p>${ contact.email } |
-                          <a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
-                      </div>
-                    </div>
-                    <div class="extra content">
-                        <a>
-                          <i class="user icon"></i>
-                          22 Friends
-                        </a>
-                      </div>
-                    </div>
+        </div>
   </div>
 </div>
 `
- 
+
   // <div class="four wide column"></div>
   // <div class="four wide column"></div> 
       // <div class="card">
