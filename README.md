@@ -1,5 +1,5 @@
 # Adress Book Challenge
-Creators:  
+**Built by**   
 [Pia von Wachenfelt](https://github.com/piavW)  
 [Clarissa Liljander](https://github.com/clalil)
 

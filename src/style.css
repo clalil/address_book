@@ -1,6 +1,6 @@
 body {
     margin: 1rem;
-    background:rgb(211, 211, 211,0.1); 
+    background: darkslategrey;
  } 
 
 #add-contact{
@@ -15,9 +15,18 @@ body {
     margin: 1rem;
 }
 
-.column {
+.ui.column {
     margin: 0.5rem;
+}
 
+.ui.text.container {
+    border: 1px solid darkslategrey;
+    background-color: #fff;
+    margin: 0.5rem;
+}
+
+.ui.form {
+    margin-right: 1rem;
 }
 
 #new-contact-form > input {
@@ -30,4 +39,12 @@ p {
 
 .company {
     font-style: italic;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 2rem;
+    margin: 1rem;
+    color: #fff;
 }
