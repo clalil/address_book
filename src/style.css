@@ -1,8 +1,7 @@
 body {
     margin: 1rem;
-    background:rgb(220, 250, 220);
+    background:rgb(211, 211, 211,0.1); 
  } 
-/*rgb(211, 211, 211,0.1); */
 
 #add-contact{
     margin: 0.5rem;
@@ -18,6 +17,7 @@ body {
 
 .column {
     margin: 0.5rem;
+
 }
 
 #new-contact-form > input {
