@@ -6,7 +6,7 @@
 
   Scenario: Create a new contact
     Given I visit the site
-    Then I should see "Contacts"
+    Then I should see "Below you may add your new contact's contact info"
     And I should see "These are not the contacts you are looking for"
     When I click "Add contact"
     Then I fill in "Name" with "John Doe"
@@ -23,7 +23,7 @@
 
   Scenario: User creates multiple contacts
     Given I visit the site
-    Then I should see "Contacts"
+    Then I should see "Below you may add your new contact's contact info"
     And I should see "These are not the contacts you are looking for"
     When I click "Add contact"
     Then I fill in "Name" with "John Doe"

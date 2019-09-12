@@ -1,5 +1,6 @@
 body {
     margin: 1rem;
+    background: rgb(211, 211, 211,0.1);
 }
 
 #add-contact{
@@ -12,4 +13,12 @@ body {
 
 #contact-list {
     margin: 1rem;
+}
+
+.column {
+    margin: 0.5rem;
+}
+
+#new-contact-form > input {
+    margin: 0.5rem;
 }
