@@ -1,4 +1,30 @@
 # Adress Book Challenge
+Creators:  
+[Pia von Wachenfelt](https://github.com/piavW)  
+[Clarissa Liljander](https://github.com/clalil)
+
+## What the code does
+This code creates an address book where you can add contacts that are saved in your local browser across browser sessions. 
+
+## Dependencies & code
+This code is written in JavaScript, HTML and CSS and is feature tested with Cucumber. 
+Dependencies:
+Yarn (package manager)
+Node (open source service environment)
+Chai (Node library)
+Puppeteer (Node library)
+Superstatic (web server)
+Webpack (module bundler)
+LocalStorage
+
+## Setup
+After you fork the repository, you need to install the dependencies if you want to change anything in the code or run a test. If you want to use the code as it is, you may fork the repository and deploy it with for example GitHub Pages. 
+
+## Acknowledgements
+Avatar picture found at [Wikipedia](<https://upload.wikimedia.org/wikipedia/commons/2/24/Missing_avatar.svg>)
+
+## License
+MIT-license
 
 ## User stories  
 ```

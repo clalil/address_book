@@ -10,7 +10,7 @@ const renderContacts = () => {
       li.innerHTML = `
   <div class="ui column">
         <div class="ui card">
-            <div class="image"><img src="https://semantic-ui.com/images/avatar/large/daniel.jpg"></div>
+            <div class="image"><img src="https://upload.wikimedia.org/wikipedia/commons/2/24/Missing_avatar.svg"></div>
           <div class="content">
             <h3>${ contact.name }</h3>
             <div class="description">
@@ -20,7 +20,7 @@ const renderContacts = () => {
           </div>
           <div class="extra content">
             <p><i class="phone icon"></i>${ contact.phone }</p>
-            <p><i class="mail icon"></i>${ contact.email } </p>
+            <p><i class="mail icon"></i>${ contact.email }</p>
             <p><i class="twitter icon"></i><a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
           </div>
         </div>
@@ -46,7 +46,6 @@ document.addEventListener('DOMContentLoaded', () => {
         company,
         notes,
         twitter,
-        photo, //
       } = addContactForm.elements
   
       const contact = {
@@ -57,7 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
         company: company.value,
         notes: notes.value,
         twitter: twitter.value,
-        photo: photo.value,//
       }
 
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
