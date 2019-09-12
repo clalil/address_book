@@ -22,3 +22,11 @@ body {
 #new-contact-form > input {
     margin: 0.5rem;
 }
+
+p {
+    font-size: 1.2rem;
+}
+
+.company {
+    font-style: italic;
+}

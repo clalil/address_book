@@ -1,13 +1,13 @@
-    Feature: Create contacts
-    As a user
-    In order to stay in touch with my friends
-    I would like to be able to create a contact for them in my address book
+Feature: Create contacts
+As a user
+In order to stay in touch with my friends
+I would like to be able to create a contact for them in my address book
 
 
   Scenario: Create a new contact
     Given I visit the site
-    Then I should see "Below you may add your new contact's contact info"
-    And I should see "These are not the contacts you are looking for"
+    Then I should see "My address book"
+    And I should see "You haven't added any contacts yet."
     When I click "Add contact"
     Then I fill in "Name" with "John Doe"
     And I fill in "Email" with "john@doe.com"
@@ -23,8 +23,8 @@
 
   Scenario: User creates multiple contacts
     Given I visit the site
-    Then I should see "Below you may add your new contact's contact info"
-    And I should see "These are not the contacts you are looking for"
+    Then I should see "My address book"
+    And I should see "You haven't added any contacts yet."
     When I click "Add contact"
     Then I fill in "Name" with "John Doe"
     And I fill in "Email" with "john@doe.com"

@@ -5,7 +5,6 @@ const renderContacts = () => {
   let div = document.querySelector('#contact-list')
   if (contacts) {
     div.innerHTML = ''
-    // const ul = document.createElement('div')
    contacts.forEach(contact => {
       let li = document.createElement('div')
       li.innerHTML = `
@@ -13,53 +12,30 @@ const renderContacts = () => {
         <div class="ui card">
             <div class="image"><img src="https://semantic-ui.com/images/avatar/large/daniel.jpg"></div>
           <div class="content">
-            <a class="header">${ contact.name }</a>
-            <div class="meta">
-              <span class="date">Joined in 2013</span>
-            </div>
+            <h3>${ contact.name }</h3>
             <div class="description">
-                <h2>${ contact.company }</h2>
-                <p>${ contact.notes }</p>
-                <p>${ contact.email } |
-                <a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
+              <p>${ contact.notes }</p>    
+              <p class="company"><i class="briefcase icon"></i>${ contact.company }</p>
             </div>
           </div>
           <div class="extra content">
-              <a>
-                <i class="user icon"></i>
-                22 Friends
-              </a>
+            <p><i class="phone icon"></i>${ contact.phone }</p>
+            <p><i class="mail icon"></i>${ contact.email } </p>
+            <p><i class="twitter icon"></i><a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
           </div>
         </div>
   </div>
- 
 `
-      // <div class="card">
-      //   <div class="image">
-      //     <img src="https://ca-address-book.herokuapp.com/images/pine.jpg" />
-      //   </div>
-      //   <div class="content">
-      //     <h1>${ contact.name }</h1>
-      //     <h2>${ contact.company }</h2>
-      //     <p>${ contact.notes }</p>
-      //     <p>${ contact.email } |
-      //     <a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
-      //   < /div>
-      // </div>
-
       div.appendChild(li)  
     })
-   // div.appendChild(ul)
   } else {
-    div.innerHTML = '<p>These are not the contacts you are looking for</p>'
+    div.innerHTML = '<p>You haven\'t added any contacts yet.</p>'
   }
 }
 
 document.addEventListener('DOMContentLoaded', () => {
   renderContacts()  
-
   const addContactForm = document.querySelector('#new-contact-form')
-  
     addContactForm.addEventListener('submit', event => {
       event.preventDefault()
   
@@ -70,6 +46,7 @@ document.addEventListener('DOMContentLoaded', () => {
         company,
         notes,
         twitter,
+        photo, //
       } = addContactForm.elements
   
       const contact = {
@@ -80,14 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
         company: company.value,
         notes: notes.value,
         twitter: twitter.value,
+        photo: photo.value,//
       }
-  
+
       console.log(`Saving the following contact: ${JSON.stringify(contact)}`)
-      
-      let contacts = JSON.parse(storage.getItem('contacts')) || []
-      contacts.push(contact)
-      storage.setItem('contacts', JSON.stringify(contacts))
+        let contacts = JSON.parse(storage.getItem('contacts')) || []
+        contacts.push(contact)
+        storage.setItem('contacts', JSON.stringify(contacts))
       renderContacts()
-      addContactForm.reset() //this resets the form after the first contact has been added - without this, it only adds one contact cause it adds the info of both contacts at the same time.
+      addContactForm.reset() 
   })
 })
