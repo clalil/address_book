@@ -5,14 +5,11 @@ const renderContacts = () => {
   let div = document.querySelector('#contact-list')
   if (contacts) {
     div.innerHTML = ''
-    const ul = document.createElement('div')
-
+    // const ul = document.createElement('div')
    contacts.forEach(contact => {
       let li = document.createElement('div')
-      li.innerHTML = 
-      `
-<div class="ui grid">
-  <div class="four wide column">
+      li.innerHTML = `
+      <div class="ui column">
         <div class="ui card">
           <div class="image">
             <img src="https://semantic-ui.com/images/avatar/large/daniel.jpg">
@@ -37,11 +34,9 @@ const renderContacts = () => {
             </div>
         </div>
   </div>
-</div>
+  </div>
+ 
 `
-
-  // <div class="four wide column"></div>
-  // <div class="four wide column"></div> 
       // <div class="card">
       //   <div class="image">
       //     <img src="https://ca-address-book.herokuapp.com/images/pine.jpg" />
@@ -55,9 +50,9 @@ const renderContacts = () => {
       //   < /div>
       // </div>
 
-      ul.appendChild(li)  
+      div.appendChild(li)  
     })
-    div.appendChild(ul)
+   // div.appendChild(ul)
   } else {
     div.innerHTML = '<p>These are not the contacts you are looking for</p>'
   }

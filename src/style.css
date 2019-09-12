@@ -2,7 +2,14 @@ body {
     margin: 1rem;
 }
 
-#add-contact,
-#save-contact {
+#add-contact{
     margin: 0.5rem;
+}
+
+#save-contact{
+    margin: 0.5rem;
+}
+
+#contact-list {
+    margin: 1rem;
 }
