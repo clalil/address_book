@@ -4,6 +4,7 @@
 [Clarissa Liljander](https://github.com/clalil)
 
 *Deployed at [Netlify](https://myaddressbook.netlify.com/)*
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e281fa80-529f-452e-90b7-6a65132927ad/deploy-status)](https://app.netlify.com/sites/myaddressbook/deploys)
 
 ## What the code does
 This code creates an address book where you can add and remove contacts that are saved in your local browser across browser sessions. 
