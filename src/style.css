@@ -1,0 +1,53 @@
+/* General styling */
+body {
+    margin: 1rem;
+    background: darkslategrey;
+ } 
+
+p {
+    font-size: 1.2rem;
+}
+
+footer {
+    text-align: center;
+    border-top: 1px solid white;
+    padding: 2rem;
+    margin: 1rem;
+    color: #fff;
+}
+
+/* Button styling */
+#add-contact{
+    margin: 0.5rem;
+}
+
+#save-contact{
+    margin: 0.5rem;
+}
+
+/* Form styling */
+#contact-list {
+    margin: 1rem;
+}
+
+.ui.column {
+    margin: 0.5rem;
+}
+
+.ui.text.container {
+    border: 1px solid darkslategrey;
+    background-color: #fff;
+    margin: 0.5rem;
+}
+
+.ui.form {
+    margin-right: 1rem;
+}
+
+#new-contact-form > input {
+    margin: 0.5rem;
+}
+
+.company {
+    font-style: italic;
+}

@@ -5,11 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+  <link rel="stylesheet" href="src/style.css">
   <title>Address book</title>
 </head>
 
-<body>
+<body class="ui center aligned container">
+  <div class="ui text container">
+  <h1 id="add-contact" class="ui header"><i class="circular users icon"></i>My address book</h1>
+  <h2>Below you may add your new contact</h2>
+  <form id="new-contact-form" class="ui form" action="#">
+    <label for="name">Name</label>
+    <input id="contact-name" name="name" type="text">
+    <label for="email">Email</label>
+    <input id="contact-email" name="email" type="email">
+    <label for="phone">Phone</label>
+    <input id="contact-phone" name="phone" type="text">
+    <label for="company">Company</label>
+    <input id="contact-company" name="company" type="text">
+    <label for="notes">Notes</label>
+    <input id="contact-notes" name="notes" type="text">
+    <label for="twitter">Twitter</label>
+    <input id="contact-twitter" name="twitter" type="text">
+    <button id="save-contact" class="ui black basic button" type="submit" value="Save contact"><i class="icon user"></i>Save Contact</button>
+  </form>
+  <h1>Your contacts</h1>
+  <div id="contact-list" class="ui centered grid"></div>
+  </div>
   <script src="./dist/bundle.js"></script>
+  <footer><p>Created with <i class="icon heart outline"></i> by<br> <a href="https://github.com/clalil"> Clarissa Liljander</a> & <a href="https://github.com/piavW"> Pia von Wachenfelt</a></p></footer>
 </body>
-
 </html>
