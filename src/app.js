@@ -23,8 +23,8 @@ const renderContacts = () => {
             <p><i class="mail icon"></i>${ contact.email}</p>
             <p><i class="twitter icon"></i><a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
           </div>
+          <button onClick="var c = JSON.parse(localStorage.getItem('contacts')); c.forEach((item, index, array) => item.id === ${contact.id} && array.splice(index, 1) ); localStorage.setItem('contacts', JSON.stringify(c)); window.location.reload()" class="delete-this-contact" class="ui black basic button">Delete this contact</button>
         </div>
-        <button onClick="var c = JSON.parse(localStorage.getItem('contacts')); c.forEach((item, index, array) => item.id === ${contact.id} && array.splice(index, 1) ); localStorage.setItem('contacts', JSON.stringify(c)); window.location.reload()" class="delete-this-contact">Delete this contact</button>
   </div>
 `
       div.appendChild(li)
