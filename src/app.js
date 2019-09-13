@@ -65,4 +65,13 @@ document.addEventListener('DOMContentLoaded', () => {
       renderContacts()
       addContactForm.reset() 
   })
+
+  const deleteContacts = document.querySelector('#delete-contacts') 
+  deleteContacts.addEventListener('reset', event => {
+    event.preventDefault()
+    let contacts = JSON.parse(window.localStorage.clear('contacts'))
+    addContactForm.reset()
+    renderContacts()
+});
+
 })

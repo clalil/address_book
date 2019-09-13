@@ -60,6 +60,6 @@ I would like to be able to delete a contact
     Then I should have 1 contact in my address book
     And I should see "John Doe" 
     #The below are new for the delete button testing
-    And I should see a "Delete All Contacts" button 
-    When I click the "Delete All Contacts" button 
+    And I should see a "Delete contacts" button 
+    When I click the "Delete contacts" button 
     Then I should see I now have 0 contact in my address book
