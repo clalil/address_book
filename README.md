@@ -16,6 +16,7 @@ Puppeteer (Node library)
 Superstatic (web server)
 Webpack (module bundler)
 LocalStorage
+SemanticUI (UI component framwork for styling websites)
 
 ## Setup
 After you fork the repository, you need to install the dependencies if you want to change anything in the code or run a test. If you want to use the code as it is, you may fork the repository and deploy it with for example GitHub Pages. 
