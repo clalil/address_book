@@ -24,6 +24,7 @@ const renderContacts = () => {
             <p><i class="twitter icon"></i><a href="https://www.twitter.com/${contact.twitter}">@${contact.twitter}</a></p>
           </div>
         </div>
+        <button onClick="this.parentNode.parentNode.removeChild(this.parentNode); localStorage.removeItem('contacts');" class="delete-this-contact">Delete this contact</button>
   </div>
 `
       div.appendChild(li)  
@@ -66,12 +67,6 @@ document.addEventListener('DOMContentLoaded', () => {
       addContactForm.reset() 
   })
 
-  const deleteContacts = document.querySelector('#delete-contacts') 
-  deleteContacts.addEventListener('reset', event => {
-    event.preventDefault()
-    let contacts = JSON.parse(window.localStorage.clear('contacts'))
-    addContactForm.reset()
-    renderContacts()
-});
-
 })
+
+let removeme = storage.setItem('removeme', JSON.stringify(contacts));

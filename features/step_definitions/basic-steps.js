@@ -29,14 +29,7 @@ Then('I should not see {string}', async function(content) {
 })
 
 //The below are new for the delete button testing
-Then('I should see a {string} button', async function(content) {
-  return await this.pageHasTextContent(content)
-})
 
-When('I click the {string} button', async function(string) {
-  return await this.clickOnButton(string)
-})
-
-Then('I should see  I now have {int} contact in my address book', async function(contactCount) {
-  return await this.checkContactStorageCount(contactCount)
-})
+When('I click the {string} button', async function (string) {
+  return await this.clickOnDeleteButton(string)
+});

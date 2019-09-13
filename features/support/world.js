@@ -48,9 +48,6 @@ class AddressBookWorld {
       case 'save contact':
         return '#save-contact'
         break
-      case 'delete contacts':
-        return '#delete-contacts'
-        break
       default: 
         throw `${btnName} button is not defined.`
         break
@@ -62,6 +59,12 @@ class AddressBookWorld {
       () => JSON.parse(window.localStorage.getItem('contacts')).length
     )
     expect(actualCount).to.be.eq(expectedCount)
+  }
+//for delete button below
+  async clickOnDeleteButton() {
+    const btnSelector = '.delete-this-contact' 
+    await this.page.waitForSelector(btnSelector)
+    await this.page.click(btnSelector)
   }
 }
 
