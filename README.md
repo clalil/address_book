@@ -3,7 +3,7 @@
 [Pia von Wachenfelt](https://github.com/piavW)  
 [Clarissa Liljander](https://github.com/clalil)
 
-*Deployed at [Netlify](https://thirsty-fermat-a3d729.netlify.com/)*
+*Deployed at [Netlify](https://myaddressbook.netlify.com/)*
 
 ## What the code does
 This code creates an address book where you can add and remove contacts that are saved in your local browser across browser sessions. 
