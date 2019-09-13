@@ -4,7 +4,7 @@
 [Clarissa Liljander](https://github.com/clalil)
 
 ## What the code does
-This code creates an address book where you can add contacts that are saved in your local browser across browser sessions. 
+This code creates an address book where you can add and remove contacts that are saved in your local browser across browser sessions. 
 
 ## Dependencies & code
 This code is written in JavaScript, HTML and CSS and is feature tested with Cucumber. 
