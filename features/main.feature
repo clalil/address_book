@@ -75,7 +75,7 @@ I would like to be able to delete a contact
     And I click "Save contact"
     And I should see "John Doe"
     When I click the "Delete this contact" button 
-    Then I should have 1 contact in my address book
+    Then I should have 0 contact in my address book
     And I click "Add contact"
     Then I fill in "Name" with "Jane Doe"
     And I fill in "Email" with "jane@doe.com"
