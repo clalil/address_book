@@ -1,11 +1,5 @@
 const storage = window.localStorage
 
-const clickHandler = () => {
-  this.parentNode.parentNode.removeChild(this.parentNode);
-  debugger
-  // localStorage.removeItem('contacts[i]');
-}
-
 const renderContacts = () => {
   const contacts = JSON.parse(storage.getItem('contacts'))
   let div = document.querySelector('#contact-list')
@@ -34,8 +28,6 @@ const renderContacts = () => {
   </div>
 `
       div.appendChild(li)
-
-
     })
   } else {
     div.innerHTML = '<p>You haven\'t added any contacts yet.</p>'
@@ -43,9 +35,6 @@ const renderContacts = () => {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
- 
-
-
   renderContacts()
   const addContactForm = document.querySelector('#new-contact-form')
   addContactForm.addEventListener('submit', event => {
@@ -77,12 +66,4 @@ document.addEventListener('DOMContentLoaded', () => {
     renderContacts()
     addContactForm.reset()
   })
-  // let deleteButtons = document.querySelector('.delete-this-contact')
-  // if (deleteButtons) {
-  //   deleteButtons.forEach(button => {
-  //     button.addEventListener('click', clickHandler)
-  //   })
-  // }
 })
-
-//let removeme = storage.setItem('removeme', JSON.stringify(contacts)); //WIP

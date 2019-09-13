@@ -28,8 +28,7 @@ Then('I should not see {string}', async function(content) {
   return await this.pageDoesNotHaveTextContent(content)
 })
 
-//The below are new for the delete button testing
-
+//The step below is only for the delete button testing
 When('I click the {string} button', async function (string) {
   return await this.clickOnDeleteButton(string)
 });
