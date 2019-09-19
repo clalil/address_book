@@ -60,7 +60,7 @@ class AddressBookWorld {
     )
     expect(actualCount).to.be.eq(expectedCount)
   }
-//for delete button below
+
   async clickOnDeleteButton() {
     const btnSelector = '.delete-this-contact' 
     await this.page.waitForSelector(btnSelector)
