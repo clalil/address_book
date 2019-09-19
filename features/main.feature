@@ -69,4 +69,3 @@ I would like to be able to delete a contact
     And I fill in "Twitter" with "janedoe"
     And I click "Save contact"
     And I should see "Jane Doe"
-   
